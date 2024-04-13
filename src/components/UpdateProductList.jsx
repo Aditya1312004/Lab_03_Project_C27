@@ -68,56 +68,71 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
-    backgroundColor: "#333",
-    color: "#fff",
+    backgroundColor: "#f8f9fa", // Light gray background
+    color: "#333", // Dark text color
     fontFamily: "Arial, sans-serif",
   },
   card: {
     width: "100%",
     maxWidth: "400px",
     padding: "20px",
-    borderRadius: "8px",
-    backgroundColor: "#555",
-    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+    borderRadius: "10px", // Slightly rounded corners
+    backgroundColor: "#fff", // White background
+    boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)", // Soft shadow
   },
   heading: {
-    fontSize: "2rem",
+    fontSize: "2.5rem", // Larger heading font size
     marginBottom: "20px",
     textAlign: "center",
+    color: "#007bff", // Blue heading color
+    textTransform: "uppercase",
+    letterSpacing: "2px",
   },
   form: {
     display: "flex",
     flexDirection: "column",
+    gap: "20px", // Spacing between form elements
   },
   formGroup: {
-    marginBottom: "15px",
+    marginBottom: "20px", // Increased margin bottom for form groups
   },
   label: {
-    fontSize: "1rem",
-    color: "#fff",
-    marginBottom: "5px",
+    fontSize: "1.2rem", // Larger label font size
+    color: "#555", // Dark label color
+    marginBottom: "8px",
   },
   input: {
-    padding: "12px",
-    fontSize: "1rem",
-    borderRadius: "4px",
-    border: "none",
-    backgroundColor: "#ddd",
+    padding: "14px", // Increased input padding
+    fontSize: "1.2rem", // Larger input font size
+    borderRadius: "6px", // Rounded input corners
+    border: "1px solid #ccc", // Light border
+    backgroundColor: "#f5f5f5", // Light gray background
     color: "#333",
     width: "100%",
-    boxSizing: "border-box", // Ensure padding and border are included in width
+    boxSizing: "border-box", // Include padding and border in width
   },
   button: {
-    padding: "12px",
-    fontSize: "1rem",
-    backgroundColor: "#007bff", // Blue button color for update action
-    color: "#fff",
+    padding: "14px", // Increased button padding
+    fontSize: "1.2rem", // Larger button font size
+    backgroundColor: "#28a745", // Green button color
+    color: "#fff", // White button text color
     border: "none",
-    borderRadius: "4px",
+    borderRadius: "6px", // Rounded button corners
     cursor: "pointer",
     transition: "background-color 0.3s ease",
     width: "100%",
   },
 };
+
+// Add hover effect
+styles.button[":hover"] = {
+  backgroundColor: "#218838", // Darker green on hover
+};
+
+// Add click effect
+styles.button[":active"] = {
+  transform: "scale(0.95)", // Slightly shrink the button on click
+};
+
 
 export default UpdateProductForm;

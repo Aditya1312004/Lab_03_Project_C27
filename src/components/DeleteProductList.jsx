@@ -51,8 +51,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
-    backgroundColor: "#333",
-    color: "#fff",
+    backgroundColor: "#f8f9fa", // Lighter background color
     fontFamily: "Arial, sans-serif",
   },
   card: {
@@ -60,45 +59,46 @@ const styles = {
     maxWidth: "400px",
     padding: "20px",
     borderRadius: "8px",
-    backgroundColor: "#555",
-    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+    backgroundColor: "#fff", // White background for card
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Box shadow for card
   },
   heading: {
     textAlign: "center",
     marginBottom: "20px",
-    fontSize: "1.8rem",
+    fontSize: "2rem", // Larger font size for heading
+    color: "#333",
     textTransform: "uppercase",
     letterSpacing: "2px",
   },
   form: {
     display: "flex",
     flexDirection: "column",
-    gap: "15px",
+    gap: "20px", // Increased spacing between form elements
   },
   formGroup: {
-    marginBottom: "15px",
+    marginBottom: "20px", // Increased margin bottom for form groups
   },
   label: {
-    fontSize: "1rem",
-    color: "#fff",
+    fontSize: "1.2rem", // Larger font size for labels
+    color: "#666", // Darker label color
   },
   input: {
-    padding: "12px",
-    fontSize: "1rem",
-    borderRadius: "4px",
-    border: "none",
-    backgroundColor: "#ddd",
+    padding: "14px", // Slightly increased input padding
+    fontSize: "1.2rem", // Larger font size for inputs
+    borderRadius: "6px", // Rounder input corners
+    border: "1px solid #ddd", // Light border around inputs
+    backgroundColor: "#f5f5f5", // Lighter background color for inputs
     color: "#333",
     width: "100%",
     boxSizing: "border-box", // Ensure padding and border are included in width
   },
   button: {
-    padding: "12px",
-    fontSize: "1rem",
-    backgroundColor: "#dc3545", // Red button color for delete action
+    padding: "14px", // Slightly increased button padding
+    fontSize: "1.2rem", // Larger font size for button text
+    backgroundColor: "#17a2b8", // Turquoise button color
     color: "#fff",
     border: "none",
-    borderRadius: "4px",
+    borderRadius: "6px",
     cursor: "pointer",
     transition: "background-color 0.3s ease",
     width: "100%",
@@ -107,12 +107,12 @@ const styles = {
 
 // Add hover effect
 styles.button[':hover'] = {
-  backgroundColor: "#c82333", // Darker red on hover
+  backgroundColor: "#138496", // Darker turquoise on hover
 };
 
 // Add click effect
 styles.button[':active'] = {
-  transform: "scale(0.98)", // Slightly shrink the button on click
+  transform: "scale(0.95)", // Slightly shrink the button on click
 };
 
 export default DeleteProductList;
